@@ -1,0 +1,40 @@
+.container  {
+    max-width: 600px;
+    padding: 15px;
+    font-size: 1.6rem;
+    
+}
+
+.header  {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0 ;
+
+    &__title  {
+        color: $very-dark-blue;
+        font-weight: 800;
+        display: flex;
+        align-items: flex-end;
+
+
+        .numOfNotifications  {
+            display: inline-block;
+            text-align: center;
+            width: 35px;
+            font-size: 1.7rem;
+            margin-left: 12px;
+            color: $white;
+            background-color: $blue;
+            padding: 3px 0;
+            border-radius: 7px;
+        }
+    }
+
+    &__toggle-readOrNot  {
+        border: 0;
+        color: $dark-grayish-blue;
+        background-color: transparent;
+        font-size: 1.4rem;
+        font-weight: 400;
+    }
+}
