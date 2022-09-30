@@ -25,62 +25,74 @@
   <body>
     <section class="container">
       <header class="header">
-        <h1 class="header__title">Notifications<span class="numOfNotifications">3</span></h1>
+        <h1 class="header__title">Notifications<span class="numOfNotifications"></span></h1>
         <button class="header__toggle-readOrNot">Mark all as read</button>
       </header>
       <main class="notifications">
-        <div class="notification">
-          <div class="notification__avatar"></div>
-          <div class="notification__content">
-            <p class="content">
+        <div class="notification unread">
+          <div class="notification__avatar">
+            <img src="./assets/images/avatar-mark-webber.webp" alt="">
+          </div>
+          <div class="notification__wrapper wrapper">
+            <p class="wrapper__content content">
               <span class="content__name">Mark Webber</span>
               <span class="content__action">reacted to your recent post</span>
               <span class="content__subject"><a href="">My
                 first tournament today!</a></span>
               <span class="content__read-mark"></span>
               </br>
-              <span class="content__time-elapsed">1m ago</span>
             </p>
+            <span class="wrapper__time-elapsed">1m ago</span>
+            
           </div>
         </div>
-        <div class="notification">
-          <div class="notification__avatar"></div>
-          <div class="notification__content">
-            <p class="content">
+        <div class="notification unread">
+          <div class="notification__avatar">
+            <img src="./assets/images/avatar-angela-gray.webp" alt="">
+          </div>
+          <div class="notification__wrapper wrapper">
+            <p class="wrapper__content content">
               <span class="content__name">Angela Gray</span>
               <span class="content__action">followed you</span>
               <span class="content__subject"><a href=""></a></span>
               <span class="content__read-mark"></span>
               </br>
-              <span class="content__time-elapsed">5m ago</span>
+            </p>
+            <span class="wrapper__time-elapsed">5m ago</span>
             </p>
           </div>
         </div>
-        <div class="notification">
-          <div class="notification__avatar"></div>
-          <div class="notification__content">
-            <p class="content">
+        <div class="notification unread">
+          <div class="notification__avatar">
+            <img src="./assets/images/avatar-jacob-thompson.webp" alt="">
+          </div>
+          <div class="notification__wrapper wrapper">
+            <p class="wrapper__content content">
               <span class="content__name">Jacob
                 Thompson</span>
               <span class="content__action">has joined your group</span>
               <span class="content__subject"><a href="">Chess Club</a></span>
               <span class="content__read-mark"></span>
               </br>
-              <span class="content__time-elapsed">1 day ago</span>
+            </p>
+            <span class="wrapper__time-elapsed">1 day ago</span>
             </p>
           </div>
         </div>
-        <div class="notification">
-          <div class="notification__avatar"></div>
-          <div class="notification__content">
-            <p class="content">
+        <div class="notification unread">
+          <div class="notification__avatar">
+            <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="">
+          </div>
+          <div class="notification__wrapper wrapper">
+            <p class="wrapper__content content">
               <span class="content__name">Rizky Hasanuddin</span>
               <span class="content__action">sent
                 you a private message</span>
               <span class="content__subject"><a href=""></a></span>
               <span class="content__read-mark"></span>
               </br>
-              <span class="content__time-elapsed">5 days ago</span>
+            </p>
+            <span class="wrapper__time-elapsed">5 days ago</span>
             </p>
             <div class="message">
               <p>Hello, thanks for setting up the Chess
@@ -89,44 +101,53 @@
             </div>
           </div>
         </div>
-        <div class="notification">
-          <div class="notification__avatar"></div>
-          <div class="notification__content">
-            <p class="content">
+        <div class="notification unread">
+          <div class="notification__avatar">
+            <img src="./assets/images/avatar-kimberly-smith.webp" alt="">
+          </div>
+          <div class="notification__wrapper wrapper">
+            <p class="wrapper__content content">
               <span class="content__name">Kimberly Smith</span>
               <span class="content__action">commented on your picture</span>
               <span class="content__subject"><a href=""></a></span>
               <span class="content__read-mark"></span>
               </br>
-              <span class="content__time-elapsed">1 week
-                ago</span>
             </p>
+            <span class="wrapper__time-elapsed">1 week
+                ago</span>
+          </div>
+          <div class="notification__picture">
+            <img src="./assets/images/image-chess.webp" alt="">
           </div>
         </div>
-        <div class="notification">
-          <div class="notification__avatar"></div>
-          <div class="notification__content">
-            <p class="content">
+        <div class="notification unread">
+          <div class="notification__avatar">
+            <img src="./assets/images/avatar-nathan-peterson.webp" alt="">
+          </div>
+          <div class="notification__wrapper wrapper">
+            <p class="wrapper__content content">
               <span class="content__name">Nathan Peterson</span>
               <span class="content__action">reacted to your recent post</span>
               <span class="content__subject"><a href="">5 end-game strategies to
                 increase your win rate</a></span>
               <span class="content__read-mark"></span>
               </br>
-              <span class="content__time-elapsed">2 weeks ago </span>
+            </p>
+            <span class="wrapper__time-elapsed">2 weeks ago </span>
             </p>
           </div>
         </div>
-        <div class="notification">
-          <div class="notification__avatar"></div>
-          <div class="notification__content">
-            <p class="content">
+        <div class="notification unread">
+          <div class="notification__avatar"><img src="./assets/images/avatar-anna-kim.webp" alt=""></div>
+          <div class="notification__wrapper wrapper">
+            <p class="wrapper__content content">
               <span class="content__name">Anna Kim</span>
               <span class="content__action">left the group </span>
               <span class="content__subject"><a href="">Chess Club </a></span>
               <span class="content__read-mark"></span>
               </br>
-              <span class="content__time-elapsed">2 weeks ago</span>
+            </p>
+            <span class="wrapper__time-elapsed">2 weeks ago</span>
             </p>
           </div>
         </div>
@@ -141,5 +162,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Tiyyo</a>.
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
