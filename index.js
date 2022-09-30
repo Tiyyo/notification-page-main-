@@ -7,8 +7,6 @@ const allReadBtn = document.getElementsByClassName(
 const readMark = document.getElementsByClassName("content__read-mark")[0];
 let notifValue = 0;
 
-console.log(typeof window);
-
 function markAsRead(element) {
   if (element.classList.contains("unread")) {
     element.classList.add("read");
