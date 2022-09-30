@@ -5,18 +5,16 @@ const allReadBtn = document.getElementsByClassName(
   "header__toggle-readOrNot"
 )[0];
 const readMarks = document.querySelectorAll(".content__read-mark");
+const childReadMark = document.querySelectorAll(".notification").childNodes;
 let notifValue = 0;
 
-// console.log(readMarks);
+console.log(childReadMark);
 
 function markAsRead(element) {
   if (element.classList.contains("unread")) {
     element.classList.add("read");
     element.classList.remove("unread");
   }
-}
-function removeReadMark(element) {
-  return (element.style.display = "none");
 }
 
 function countNotifs() {
@@ -36,8 +34,7 @@ window.addEventListener("load", () => {
 
 // toggle all notifications from unread to read
 notifs.forEach((notif) => {
-  allReadBtn.addEventListener("click", (e) => {
-    console.log(e);
+  allReadBtn.addEventListener("click", () => {
     markAsRead(notif);
     notifValue = 0;
     numOfNotifications.textContent = notifValue;
@@ -51,10 +48,12 @@ notifs.forEach((notif) => {
 notifs.forEach((notif) => {
   notif.addEventListener("click", () => {
     markAsRead(notif);
+    readMarkChild = notif.children[1].children[0].children[3];
+    console.log(readMarkChild);
+    readMarkChild.classList.toggle("read");
+    readMarkChild.classList.toggle("unread");
     countNotifs();
   });
 });
 
 // remove readMark on click
-
-readMarks.forEach((readMark) => {});

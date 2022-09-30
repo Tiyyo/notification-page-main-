@@ -93,6 +93,9 @@ body {
 .notification.read {
   background-color: hsl(0deg, 0%, 100%);
 }
+.notification.read__wrapper .content__read-mark {
+  display: none;
+}
 .notification__avatar {
   margin-right: 15px;
 }
@@ -152,10 +155,15 @@ body {
   font-weight: 600;
 }
 .content__read-mark {
-  display: inline-block;
   margin: 0 0 0 3px;
   border-radius: 50%;
   background-color: hsl(1deg, 90%, 64%);
   height: 8px;
   width: 8px;
+}
+.content__read-mark.read {
+  display: none;
+}
+.content__read-mark.unread {
+  display: inline-block;
 }/*# sourceMappingURL=main.css.map */

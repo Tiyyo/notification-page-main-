@@ -59,9 +59,18 @@
 
     &.unread {
     background-color: $very-light-grayish-blue;
+
+    
     }
     &.read {
     background-color: $white;
+        &__wrapper{
+            .content{
+                &__read-mark{
+                    display : none;
+                }
+            }
+        }
     }
 
     display: flex;
@@ -146,7 +155,13 @@
         }
     }
     &__read-mark  {
+
+        &.read {
+            display: none;
+        }
+        &.unread {
         display: inline-block;
+        }
         margin: 0 0 0 3px;
         border-radius: 50%;
         background-color: $red;
