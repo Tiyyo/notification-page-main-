@@ -4,15 +4,19 @@ const numOfNotifications =
 const allReadBtn = document.getElementsByClassName(
   "header__toggle-readOrNot"
 )[0];
-const readMark = document.getElementsByClassName("content__read-mark")[0];
+const readMarks = document.querySelectorAll(".content__read-mark");
 let notifValue = 0;
+
+// console.log(readMarks);
 
 function markAsRead(element) {
   if (element.classList.contains("unread")) {
     element.classList.add("read");
     element.classList.remove("unread");
-    readMark.style.display = "none";
   }
+}
+function removeReadMark(element) {
+  return (element.style.display = "none");
 }
 
 function countNotifs() {
@@ -37,6 +41,9 @@ notifs.forEach((notif) => {
     markAsRead(notif);
     notifValue = 0;
     numOfNotifications.textContent = notifValue;
+    readMarks.forEach((readMark) => {
+      removeReadMark(readMark);
+    });
   });
 });
 
@@ -47,3 +54,7 @@ notifs.forEach((notif) => {
     countNotifs();
   });
 });
+
+// remove readMark on click
+
+readMarks.forEach((readMark) => {});
