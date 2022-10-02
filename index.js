@@ -50,8 +50,8 @@ notifs.forEach((notif) => {
     markAsRead(notif);
     readMarkChild = notif.children[1].children[0].children[3];
     console.log(readMarkChild);
-    readMarkChild.classList.toggle("read");
-    readMarkChild.classList.toggle("unread");
+    readMarkChild.classList.add("read");
+    readMarkChild.classList.remove("unread");
     countNotifs();
   });
 });
